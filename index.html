@@ -1,23 +1,20 @@
 <html>
 
-<body style="background-color: #2A2A2A">
+<body class="body-setting">
 
   <!-- Import Bootstrap -->
-
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
-  <!-- Navigation Bar -->
-
-  <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+  <!-- Nav bar div -->
+  <nav id="nav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></button>
+      <div class="navbar-header">
         <a class="navbar-brand">Michael Dao - <em>Computer Scientist</em></a>
       </div>
       <div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -26,86 +23,56 @@
       </div>
     </div>
   </nav>
+  <!-- End Nav bar div -->
 
-  <!-- Home Page -->
 
-  <div id="home">
-    <div class="jumbotron text-stroke auto-rescale">
+  <!-- Home Page div -->
+  <div id="home" class="push-down">
+    <div class="jumbotron text-stroke">
       <h1 class="animate slide-right">Michael Dao</h1>
       <hr class="blue-line fade-in delay">
       <h2 class="animate slide-right"><em>Web Developer - Programmer - Computer Scientist</em></h2>
-
     </div>
   </div>
+  <!-- End Home Page div -->
 
-  <!-- About -->
 
-  <div class="container-fluid" style="background-color: #90AFC5" id="about">
-    <hr style="padding-bottom: 30px" class="invisible">
-    <h1 class="text-center">About Me</h1>
-    <div class="row">
-      <div class="col-xs-4">
-        <img class="img-responsive image-setting" src="http://res.cloudinary.com/ds4esbrtq/image/upload/v1498905933/19578077_452302641813252_1746662741_n_qnbuw7.jpg">
+  <!-- About div -->
+  <div class="container-fluid push-down " style="background-color: #90AFC5" id="about">
+    <hr style="padding: 15px" class="invisible">
+    <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-10 col-md-7" id="about">
+        <h2 class="text-center text-left-md">Michael Dao</h1>
+        <h3 class="text-center text-left-md">Ameteur Programmer in training.</h3>
+        <p class="text-center text-left-md">RMIT Student, currently undertaking the Bachelor of Computer Science course. I picked up programming in 2016 and continue to learn new things everyday. If you recognize what pose I am doing, then we will be great friends!</p>
       </div>
-
-      <div class="col-xs-4" style="padding-bottom: 80px">
-        <h3>Michael Dao</h3>
-        <h4>Ameteur Programmer in training.</h4>
-        <p>Student at RMIT University, currently undertaking the Bachelor of Comupter Science course. I picked up programming in 2016 and now im still learning new things everyday.</p>
-        <p>Programming languages I currently understand:</p>
-        <ul>
-          <li>Visual Basic</li>
-          <li>Java</li>
-          <li>HTML and CSS</li>
-        </ul>
-        <p>I find programming to be one of my main passions these days, although I am new and unexperienced, I find it to be one of the most thrilling experiences whenever I develop anything.</p>
+      <div class="col-xs-12 col-sm-6 col-md-5">
+        <img class="img-responsive img-circle image-setting" src="http://res.cloudinary.com/ds4esbrtq/image/upload/v1499602589/jojo_pose_glcyy1.png">
       </div>
     </div>
+    <!-- End About div -->
 
+    <hr style="padding-bottom: 30px" class="invisible">
 
-    <!-- Portfolio Page -->
+    <!-- Portfolio div -->
     <hr id="portfolio" style="padding-bottom: 30px">
-
     <div class="container-fluid text-center" style="padding-bottom: 80px">
       <h1>Portfolio</h1>
       <p>Currently I still have nothing to show here, however if you check back in the future, it will continually expand as my skill progresses.</p>
       <p>For now you can go over to my GitHub account and check out my repositories.</p>
       <a class="btn btn-primary" href="https://github.com/saladsnake" target="_blank">My GitHub<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
+    <!-- End Portfolio div -->
 
-
-    <!-- Contact Page -->
-
-    <hr id="contact">
-
-
+    <!-- Contact div -->
+    <hr id="contact" style="padding-bottom: 30px">
     <div class="container-fluid text-center">
       <h1>Contact Me</h1>
-      <p>This is currently unlinked to my email at the moment.</p>
-      <div class="row " style="padding-bottom: 80px">
-        <div class="col-md-8 col-md-offset-2">
-          <!-- Name -->
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <!-- Email -->
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" placeholder="example@email.com">
-          </div>
-          <!-- Message -->
-          <div class="form-group ">
-            <label>Your Message</label>
-            <textarea class="form-control" placeholder="Description"></textarea>
-          </div>
-          <button type="submit" class="btn btn-default">Send Message</button>
-          </ul>
-        </div>
-      </div>
+      <p>You can contact me via my personal email:</p>
+      <a href="mailto:mifrent@hotmail.com" target="_top">mifrent@hotmail.com</a>
     </div>
-    <hr>
-
+    <hr style=": 30px" class="invisible">
+    <!-- End Contact div -->
 </body>
 
 </html>
