@@ -143,7 +143,9 @@ portfolio {
 }
 .image-setting {
   display: block;
-  border-radius: 20%;
+  border-radius: 20%;m
+  max-width: 100%;
+  height: auto;
 }
 .invisible {
   clear: both;
