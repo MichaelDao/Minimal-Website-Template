@@ -106,9 +106,7 @@ img {
 
 /* line 50, ../sass/style.scss */
 .container {
-  position: relative;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 4em;
 }
 
 /* line 58, ../sass/style.scss */
