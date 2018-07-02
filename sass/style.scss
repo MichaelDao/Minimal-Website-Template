@@ -27,8 +27,16 @@ img {
 
 // container settings
 .container {
-    position: relative;
-    padding: 4em ;
+    position: absolute;
+    //padding: 4em ;	
+	width:500px;
+ height:500px;
+ margin:0 auto;
+ margin:0 auto;
+	left:50%;
+	top:50%;
+	margin-left:-250px;
+	margin-top:-250px;
 }
 
 // make the avatar a circle
