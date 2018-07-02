@@ -90,17 +90,20 @@ img {
   height: auto;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
+html {
+  height: 100vh;
+}
+
+/* line 32, ../sass/style.scss */
+div {
+  min-height: 100vh;
+}
+
+/* line 37, ../sass/style.scss */
 .container {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  margin: 0 auto;
-  left: 50%;
-  top: 50%;
-  margin-left: -250px;
-  margin-top: -250px;
+  position: relative;
+  padding: 4em;
 }
 
 /* line 43, ../sass/style.scss */

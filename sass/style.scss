@@ -25,18 +25,18 @@ img {
     height: auto;
 }
 
+html {
+  height: 100vh;
+}
+
+div{
+	min-height: 100vh;
+}
+
 // container settings
 .container {
-    position: absolute;
-    //padding: 4em ;	
-	width:500px;
- height:500px;
- margin:0 auto;
- margin:0 auto;
-	left:50%;
-	top:50%;
-	margin-left:-250px;
-	margin-top:-250px;
+    position: relative;
+	padding: 4em ;	
 }
 
 // make the avatar a circle
