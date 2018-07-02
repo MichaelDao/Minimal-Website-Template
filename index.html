@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
 		<!-- include compass css translation -->
 		<link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
-		
+
 		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 		<!-- import icons -->
 		<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 
-		<title>Welcome to my site</title>
+		<!-- Import favicons -->
+		<link rel="shortcut icon" type="image/png" href="resources/favicon.png"/>
 		
-		<!-- ensures compatibility with older browsers and mobile -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--[if IE]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128234409-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+			gtag('config', 'UA-128234409-1');
+		</script>
+
+		<title>Welcome to my home</title>
 	</head>
-	
+
 	<div class="outer">
 		<div class="inner">
-			<div class="container">
-						
-				<section>
-				   	<img src="resources/avatar.jpg" class="avatar">
-				  	<br><br><br>
-					<h1>Hello, I'm Michael Dao!</h1>
-				</section>
-		
-				<section class="about">
-					<p>You can contact or follow me through these following services:</p>	
-						<ul class="social">
-							<li class="icon-resume tile"><a href= "resources/Resume.pdf"><ion-icon name="document"></ion-icon><br><br>Resume</a></li>
-							<li class="icon-email tile"><a href="mailto: mifrent@hotmail.com"><ion-icon name="mail"></ion-icon><br><br>Email</a></li>		
-							<li class="icon-github tile"><a href="https://github.com/saladsnake"><ion-icon name="logo-github"></ion-icon><br><br>GitHub</a></li>
-							<li class="icon-linkedin tile"><a href="https://www.linkedin.com/in/michaelduydao/"><ion-icon name="logo-linkedin"></ion-icon><br><br>LinkedIn</a></li>
-							<li class="icon-instagram tile"><a href="https://www.instagram.com/micheal.dao"><ion-icon name="logo-instagram"></ion-icon><br><br>Instagram</a></li>
-							<li class="icon-soundcloud tile"><a href="https://soundcloud.com/michael-dao-3"><ion-icon name="cloud-outline"></ion-icon><br><br>SoundCloud</a></li>
-						</ul>
-				</section>		
-				
-			</div>			
+			<section class = "gap loadanimation">
+				<img src="resources/avatar.jpg" class="avatar">
+				<h1 class="padDown">I am Michael Dao</h1>
+				<p>I can code <span id="spin"></span></p>
+            		</section>
+
+			<ul class="gap social">
+				<li class="icon-resume tile"><a href= "resources/CV.pdf"><ion-icon name="document"></ion-icon><br><br>Resume</a></li>
+				<li class="icon-transcript tile"><a href="resources/transcript.pdf"><ion-icon name="school"></ion-icon><br><br>Transcript</a></li>
+				<li class="icon-github tile"><a href="https://github.com/michaeldao"><ion-icon name="logo-github"></ion-icon><br><br>GitHub</a></li>
+				<li class="icon-linkedin tile"><a href="https://www.linkedin.com/in/michaelduydao/"><ion-icon name="logo-linkedin"></ion-icon><br><br>LinkedIn</a></li>
+				<li class="icon-email tile"><a href="mailto: daoduymichael@gmail.com"><ion-icon name="mail"></ion-icon><br><br>Email</a></li>
+			</ul>
 		</div>
-	</div>	
+	</div>
 </html>
