@@ -25,14 +25,6 @@ img {
     height: auto;
 }
 
-html {
-  //height: 100vh;
-}
-
-div{
-//	min-height: 100vh;
-}
-
 // outer and inner help keep the div centered
 .outer{
 	display: table;
@@ -49,9 +41,7 @@ div{
 // container settings
 .container {
     //position: relative;
-	padding: 4em ;	
-	//padding-left: 10%;
-    //padding-right: 10%;
+	padding: 4em ;
 }
 
 // make the avatar a circle
@@ -105,7 +95,7 @@ div{
 
 // icon size
 ion-icon {
-  font-size: 25px;
+	font-size: 25px;
 }
 
 // social link colours

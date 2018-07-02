@@ -90,7 +90,7 @@ img {
   height: auto;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .outer {
   display: table;
   position: absolute;
@@ -98,18 +98,18 @@ img {
   width: 100vw;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .inner {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .container {
   padding: 4em;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .avatar {
   -moz-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
   -webkit-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
@@ -121,16 +121,16 @@ img {
   height: 200px;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .about {
   padding: 1em 0 0em;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .social {
   margin: .5em 0;
 }
-/* line 74, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .social li {
   position: relative;
   display: inline-block;
@@ -144,7 +144,7 @@ img {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 80, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -152,7 +152,7 @@ img {
   transform: scale(1.25, 1.25);
   color: white;
 }
-/* line 85, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -161,7 +161,7 @@ img {
   top: 1.5em;
   left: 50%;
 }
-/* line 93, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .social li a {
   display: block;
   color: inherit;
@@ -172,67 +172,67 @@ img {
   text-overflow: ellipsis;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 ion-icon {
   font-size: 25px;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .icon-resume {
   color: #e95950;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .icon-resume:hover {
   background: #e95950;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .icon-email {
   color: #004f9f;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .icon-email:hover {
   background: #004f9f;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .icon-github {
   color: #333;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .icon-github:hover {
   background: #333;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .icon-linkedin {
   color: #0077b5;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .icon-linkedin:hover {
   background: #0077b5;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .icon-instagram {
   color: #cd486b;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .icon-instagram:hover {
   background: #cd486b;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .icon-soundcloud {
   color: #ff7700;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .icon-soundcloud:hover {
   background: #ff7700;
 }
