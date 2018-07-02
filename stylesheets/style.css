@@ -94,8 +94,8 @@ img {
 .outer {
   display: table;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* line 44, ../sass/style.scss */
