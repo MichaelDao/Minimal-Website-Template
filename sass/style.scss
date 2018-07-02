@@ -26,17 +26,32 @@ img {
 }
 
 html {
-  height: 100vh;
+  //height: 100vh;
 }
 
 div{
-	min-height: 100vh;
+//	min-height: 100vh;
+}
+
+// outer and inner help keep the div centered
+.outer{
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.inner{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 // container settings
 .container {
     position: relative;
-	padding: 4em ;	
+	//	padding: 4em ;	
+	padding-left: 10%;
+    padding-right: 10%;
 }
 
 // make the avatar a circle
