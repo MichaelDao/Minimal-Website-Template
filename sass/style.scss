@@ -1,17 +1,19 @@
 @import "compass/reset";
 @import "compass/css3";
  
-/* basic settings */
+// basic settings
 body {
     color: #333;  
 	text-align: center;
     font-family: 'Montserrat', sans-serif;
+	background: #f7f7f7;
 }
 
 h1{
     font-family: 'Slabo 27px', serif;
 	font-size: 2.25em;
     padding: 0 1em;
+	font-style: italic;
 }	
 
 a {
@@ -23,62 +25,29 @@ img {
     height: auto;
 }
 
-/* header settings */
-.header {
-    padding: 10em 0 14em;
-    h1 {
-        font-style: italic;
-    }
+// container settings
+.container {
+    position: relative;
+    padding: 4em ;
 }
 
 // make the avatar a circle
 .avatar {
     @include box-shadow(0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333);
     @include border-radius(50px); // half the avatar size
-    width: 100px;
-    height: 100px;
-}
-
-/* footer settings */
-.footer {
-    p {
-        color: #777;
-        padding: 0 1em;
-    }
-}
-
-// background for header and footer
-.header,
-.footer {
-    background: #f7f7f7;
+    width: 200px;
+    height: 200px;
 }
  
-.footer {
-    padding: 4em 0 6em;
+// about settings
+.about {
+    padding: 1em 0 0em;
 }
 
-// styling the icons
-
-// Shared styles
-.icon-resume:before,
-.icon-twitter:before {
-    //font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
-// Individual characters
-.icon-resume:before {
-	
-}
-	
+// social button settings
 .social {
-    margin:2em 0;
-    //font-family: Helvetica, Arial, sans-serif;
- 
+    margin: .5em 0;
+	
     li {
         position: relative;
         @include inline-block();
@@ -101,7 +70,7 @@ img {
         a {
             display: block;
             color: inherit;
-            padding: 2.5em 1em 1em;
+            padding: 1em 1em 1em;
             width: 6em;
             // allow truncation if needed
             overflow: hidden;
@@ -111,5 +80,26 @@ img {
     }
 }
 
-.icon-resume {color: #0000FF}
-.icon-resume:hover {background:#0000FF}
+// icon size
+ion-icon {
+  font-size: 25px;
+}
+
+// social link colours
+.icon-resume {color: #e95950}
+.icon-resume:hover {background:#e95950}
+
+.icon-email {color: #004f9f}
+.icon-email:hover {background:#004f9f}
+
+.icon-github {color: #333}
+.icon-github:hover {background:#333}
+
+.icon-linkedin {color: #0077b5}
+.icon-linkedin:hover {background:#0077b5}
+
+.icon-instagram {color: #cd486b}
+.icon-instagram:hover {background:#cd486b}
+
+.icon-soundcloud {color: #ff7700}
+.icon-soundcloud:hover {background:#ff7700}
