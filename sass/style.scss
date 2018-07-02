@@ -89,7 +89,7 @@ img {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-        }
+		}		
     }
 }
 
@@ -116,3 +116,33 @@ ion-icon {
 
 .icon-soundcloud {color: #ff7700}
 .icon-soundcloud:hover {background:#ff7700}
+
+// Below is the animation code
+.tile {
+  // duration | timing-function | fill-mode | name
+  animation: .3s ease-in-out both fade-in;
+}
+
+@for $i from 1 through 6 {
+.tile {
+	// :nth-child(1-6) 
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (.1s);
+    }
+  }
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
