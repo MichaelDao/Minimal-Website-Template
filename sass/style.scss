@@ -1,7 +1,9 @@
 @import "compass/reset";
 @import "compass/css3";
  
-// basic settings
+//////////////////////////
+// BASIC SETTINGS //
+//////////////////////////
 body {
     color: #333;  
 	text-align: center;
@@ -25,7 +27,23 @@ img {
     height: auto;
 }
 
-// outer and inner help keep the div centered
+ion-icon {
+	font-size: 25px; // icon size
+}
+
+.container {
+	padding: 4em ;
+}
+
+.gap {
+    padding: .7em 0 0em;
+}
+
+.padDown{
+	padding: .5em 0em .5em ;
+}
+
+// outer and inner allows vertical alignment
 .outer{
 	display: table;
 	position: absolute;
@@ -38,39 +56,73 @@ img {
 	vertical-align: middle;
 }
 
-// container settings
-.container {
-    //position: relative;
-	padding: 4em ;
-}
-
 // make the avatar a circle
 .avatar {
     @include box-shadow(0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333);
-    @include border-radius(50px); // half the avatar size
+    @include border-radius(100px); // half the avatar size
     width: 200px;
     height: 200px;
 }
- 
-// about settings
-.about {
-    padding: 1em 0 0em;
+
+/////////////////////////////
+// ANIMATION CODE //
+/////////////////////////////
+
+// Animation for image and text
+.loadanimation {
+  animation: 1.2s ease-in-out both fadeInRight;
 }
 
-// social button settings
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(300px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+       
+// tiles with hyperlinks will simply fade in order
+.tile {
+  animation: .4s ease-in-out both fade-in;
+}
+
+// delay through 6 items
+@for $i from 1 through 6 {
+.tile {
+    &:nth-child(#{$i}) {
+		animation-delay: 1.4 + $i * (.15s); //delay increases per loop
+    }
+  }
+}
+
+/* TODO At the moment, transforming will break the hover code*/
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		//transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		//transform: scale(1);
+	}
+}
+
+// Hover code animation, button scales
 .social {
-    margin: .5em 0;
-	
     li {
         position: relative;
         @include inline-block();
         margin: .5em;
         @include transition(all .15s ease);
- 
+
         &:hover {
             @include scale(1.25);
             color: white;
-        }
+			//-webkit-animation: 0; //disable keyframes
+		}
  
         &:before {
             position: absolute;
@@ -93,12 +145,7 @@ img {
     }
 }
 
-// icon size
-ion-icon {
-	font-size: 25px;
-}
-
-// social link colours
+// Colours for each of the buttons
 .icon-resume {color: #e95950}
 .icon-resume:hover {background:#e95950}
 
@@ -116,30 +163,3 @@ ion-icon {
 
 .icon-soundcloud {color: #ff7700}
 .icon-soundcloud:hover {background:#ff7700}
-
-// Below is the animation code
-.tile {
-  animation: .3s ease-in-out both fade-in;
-}
-
-@for $i from 1 through 6 {
-.tile {
-	// :nth-child(1-6) 
-    &:nth-child(#{$i}) {
-      
-      // Delay the animation. Delay increases as items loop.
-      animation-delay: $i * (.1s);
-    }
-  }
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-		transform: scale(0);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}

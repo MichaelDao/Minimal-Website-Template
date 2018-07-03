@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 5, ../sass/style.scss */
+/* line 7, ../sass/style.scss */
 body {
   color: #333;
   text-align: center;
@@ -71,7 +71,7 @@ body {
   background: #f7f7f7;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 h1 {
   font-family: 'Slabo 27px', serif;
   font-size: 2.25em;
@@ -79,18 +79,38 @@ h1 {
   font-style: italic;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
+ion-icon {
+  font-size: 25px;
+}
+
+/* line 34, ../sass/style.scss */
+.container {
+  padding: 4em;
+}
+
+/* line 38, ../sass/style.scss */
+.gap {
+  padding: .7em 0 0em;
+}
+
+/* line 42, ../sass/style.scss */
+.padDown {
+  padding: 0.5em 0em 0.5em;
+}
+
+/* line 47, ../sass/style.scss */
 .outer {
   display: table;
   position: absolute;
@@ -98,39 +118,84 @@ img {
   width: 100vw;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .inner {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 42, ../sass/style.scss */
-.container {
-  padding: 4em;
-}
-
-/* line 48, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .avatar {
   -moz-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
   -webkit-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
   box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
   width: 200px;
   height: 200px;
 }
 
-/* line 56, ../sass/style.scss */
-.about {
-  padding: 1em 0 0em;
+/* line 72, ../sass/style.scss */
+.loadanimation {
+  animation: 1.2s ease-in-out both fadeInRight;
 }
 
-/* line 61, ../sass/style.scss */
-.social {
-  margin: .5em 0;
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
 }
-/* line 64, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
+.tile {
+  animation: .4s ease-in-out both fade-in;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(1) {
+  animation-delay: 1.55s;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(2) {
+  animation-delay: 1.7s;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(3) {
+  animation-delay: 1.85s;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(4) {
+  animation-delay: 2s;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(5) {
+  animation-delay: 2.15s;
+}
+
+/* line 95, ../sass/style.scss */
+.tile:nth-child(6) {
+  animation-delay: 2.3s;
+}
+
+/* TODO At the moment, transforming will break the hover code*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 115, ../sass/style.scss */
 .social li {
   position: relative;
   display: inline-block;
@@ -144,7 +209,7 @@ img {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 70, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -152,7 +217,7 @@ img {
   transform: scale(1.25, 1.25);
   color: white;
 }
-/* line 75, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -161,7 +226,7 @@ img {
   top: 1.5em;
   left: 50%;
 }
-/* line 83, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .social li a {
   display: block;
   color: inherit;
@@ -172,113 +237,62 @@ img {
   text-overflow: ellipsis;
 }
 
-/* line 97, ../sass/style.scss */
-ion-icon {
-  font-size: 25px;
-}
-
-/* line 102, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .icon-resume {
   color: #e95950;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .icon-resume:hover {
   background: #e95950;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .icon-email {
   color: #004f9f;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .icon-email:hover {
   background: #004f9f;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .icon-github {
   color: #333;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .icon-github:hover {
   background: #333;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .icon-linkedin {
   color: #0077b5;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .icon-linkedin:hover {
   background: #0077b5;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .icon-instagram {
   color: #cd486b;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .icon-instagram:hover {
   background: #cd486b;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .icon-soundcloud {
   color: #ff7700;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .icon-soundcloud:hover {
   background: #ff7700;
-}
-
-/* line 121, ../sass/style.scss */
-.tile {
-  animation: .3s ease-in-out both fade-in;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-/* line 128, ../sass/style.scss */
-.tile:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
