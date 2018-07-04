@@ -31,10 +31,6 @@ ion-icon {
 	font-size: 25px; // icon size
 }
 
-.container {
-	padding: .8em ;
-}
-
 .gap {
     padding: .7em 0 0em;
 }
@@ -45,15 +41,13 @@ ion-icon {
 
 // outer and inner allows vertical alignment
 .outer{
-	display: table;
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	padding: 30px;
+	text-align: center;
 }
 
 .inner{
-	display: table-cell;
-	vertical-align: middle;
+	display: inline-block;
+	padding: 50px;
 }
 
 // make the avatar a circle
@@ -70,7 +64,7 @@ ion-icon {
 
 // Animation for image and text
 .loadanimation {
-  animation: 1.2s ease-in-out both fadeInRight;
+  animation: 1s ease-in-out both fadeInRight;
 }
 
 @keyframes fadeInRight {
@@ -93,7 +87,7 @@ ion-icon {
 @for $i from 1 through 6 {
 .tile {
     &:nth-child(#{$i}) {
-		animation-delay: 1.4 + $i * (.15s); //delay increases per loop
+		animation-delay: 1.2 + $i * (.15s); //delay increases per loop
     }
   }
 }
