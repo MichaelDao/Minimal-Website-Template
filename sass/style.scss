@@ -32,7 +32,7 @@ ion-icon {
 }
 
 .gap {
-    padding: .7em 0 0em;
+    padding: 1em 0 0em;
 }
 
 .padDown{
@@ -41,13 +41,14 @@ ion-icon {
 
 // outer and inner allows vertical alignment
 .outer{
-	padding: 30px;
+	padding: 20px;
 	text-align: center;
+    overflow-x: hidden;
 }
 
 .inner{
 	display: inline-block;
-	padding: 50px;
+	padding: 40px;
 }
 
 // make the avatar a circle
