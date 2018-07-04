@@ -4,26 +4,27 @@
 //////////////////////////
 // BASIC SETTINGS //
 //////////////////////////
+
 body {
-    color: #333;  
+	color: #333;  
 	text-align: center;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: #f7f7f7;
 }
 
 h1{
 	font-size: 2.25em;
-    padding: 0 1em;
+	padding: 0 1em;
 	font-style: italic;
 }	
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
  
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 ion-icon {
@@ -31,7 +32,7 @@ ion-icon {
 }
 
 .gap {
-    padding: 1em 0 0;
+	padding: 1em 0 0;
 }
 
 .padDown{
@@ -42,7 +43,7 @@ ion-icon {
 .outer{
 	padding: 20px;
 	text-align: center;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .inner{
@@ -52,10 +53,10 @@ ion-icon {
 
 // make the avatar a circle
 .avatar {
-    @include box-shadow(0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333);
-    @include border-radius(100px); // half the avatar size
-    width: 200px;
-    height: 200px;
+	@include box-shadow(0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333);
+	@include border-radius(100px); // half the avatar size
+	width: 200px;
+	height: 200px;
 }
 
 /////////////////////////////
@@ -64,7 +65,7 @@ ion-icon {
 
 // Animation for image and text
 .loadanimation {
-  animation: 1s ease-in-out both fadeInRight;
+	animation: 1s ease-in-out both fadeInRight;
 }
 
 @keyframes fadeInRight {
@@ -80,16 +81,16 @@ ion-icon {
        
 // tiles with hyperlinks will simply fade in order
 .tile {
-  animation: .4s ease-in-out both fade-in;
+	animation: .4s ease-in-out both fade-in;
 }
 
 // delay through 6 items
 @for $i from 1 through 6 {
-.tile {
-    &:nth-child(#{$i}) {
-		animation-delay: 1.2 + $i * (.15s); //delay increases per loop
-    }
-  }
+	.tile {
+		&:nth-child(#{$i}) {
+			animation-delay: 1.2 + $i * (.15s); //delay increases per loop
+		}
+	}
 }
 
 /* TODO At the moment, transforming will break the hover code*/
@@ -106,37 +107,37 @@ ion-icon {
 
 // Hover code animation, button scales
 .social {
-    li {
-        position: relative;
-        @include inline-block();
-        margin: .5em;
-        @include transition(all .15s ease);
-
-        &:hover {
-            @include scale(1.25);
-            color: white;
+	li {
+		position: relative;
+		@include inline-block();
+		margin: .5em;
+		@include transition(all .15s ease);
+		
+		&:hover {
+			@include scale(1.25);
+			color: white;
 			//-webkit-animation: 0; //disable keyframes
 		}
  
-        &:before {
-            position: absolute;
-            width: 2em; /* center align technique, give width, negative half margin */
-            margin-left: -1em;
-            top: 1.5em;
-            left: 50%;
-        }
+		&:before {
+			position: absolute;
+			width: 2em; /* center align technique, give width, negative half margin */
+			margin-left: -1em;
+			top: 1.5em;
+			left: 50%;
+		}
  
-        a {
-            display: block;
-            color: inherit;
-            padding: 1em 1em 1em;
-            width: 6em;
-            // allow truncation if needed
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+		a {
+			display: block;
+			color: inherit;
+			padding: 1em 1em 1em;
+			width: 6em;
+			// allow truncation if needed
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}		
-    }
+	}
 }
 
 // Colours for each of the buttons
