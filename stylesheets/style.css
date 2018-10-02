@@ -289,3 +289,50 @@ ion-icon {
 .icon-soundcloud:hover {
   background: #ff7700;
 }
+
+/* line 161, ../sass/style.scss */
+#spin {
+  color: red;
+}
+
+/* line 164, ../sass/style.scss */
+#spin:after {
+  content: "";
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    content: "HTML5";
+  }
+  10% {
+    content: "CSS";
+  }
+  20% {
+    content: "Java";
+  }
+  30% {
+    content: "Python";
+  }
+  40% {
+    content: "Node.Js";
+  }
+  50% {
+    content: "JavaScript";
+  }
+  60% {
+    content: "PHP";
+  }
+  70% {
+    content: "VB.Net";
+  }
+  80% {
+    content: "React";
+  }
+  90% {
+    content: "C";
+  }
+  100% {
+    content: "SQL";
+  }
+}

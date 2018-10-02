@@ -1,12 +1,12 @@
 @import "compass/reset";
 @import "compass/css3";
- 
+
 //////////////////////////
 // BASIC SETTINGS //
 //////////////////////////
 
 body {
-	color: #333;  
+	color: #333;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	background: #f7f7f7;
@@ -16,12 +16,12 @@ h1{
 	font-size: 2.25em;
 	padding: 0 1em;
 	font-style: italic;
-}	
+}
 
 a {
 	text-decoration: none;
 }
- 
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -78,7 +78,7 @@ ion-icon {
 		-webkit-transform: translateX(0);
 	}
 }
-       
+
 // tiles with hyperlinks will simply fade in order
 .tile {
 	animation: .4s ease-in-out both fade-in;
@@ -110,13 +110,13 @@ ion-icon {
 		@include inline-block();
 		margin: .5em;
 		@include transition(all .15s ease);
-		
+
 		&:hover {
 			@include scale(1.25);
 			color: white;
 			//-webkit-animation: 0; //disable keyframes
 		}
- 
+
 		&:before {
 			position: absolute;
 			width: 2em; /* center align technique, give width, negative half margin */
@@ -124,7 +124,7 @@ ion-icon {
 			top: 1.5em;
 			left: 50%;
 		}
- 
+
 		a {
 			display: block;
 			color: inherit;
@@ -134,7 +134,7 @@ ion-icon {
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
-		}		
+		}
 	}
 }
 
@@ -156,3 +156,27 @@ ion-icon {
 
 .icon-soundcloud {color: #ff7700}
 .icon-soundcloud:hover {background:#ff7700}
+
+// Adding in a really cool new feature
+#spin {
+  color:red;
+}
+#spin:after {
+  content:"";
+  animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+
+  0% { content: "HTML5"; }
+  10% { content: "CSS"; }
+  20% { content: "Java"; }
+  30% { content: "Python"; }
+  40% { content: "Node.Js"; }
+  50% { content: "JavaScript"; }
+  60% { content: "PHP"; }
+  70% { content: "VB.Net"; }
+  80% { content: "React"; }
+  90% { content: "C"; }
+  100% { content: "SQL"; }
+
+}
