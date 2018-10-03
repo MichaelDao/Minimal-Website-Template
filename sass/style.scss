@@ -1,3 +1,4 @@
+// if you want to use sass this is good
 @import "compass/reset";
 @import "compass/css3";
 
@@ -60,7 +61,7 @@ ion-icon {
 }
 
 /////////////////////////////
-// ANIMATION CODE //
+// ANIMATION CODE 		   //
 /////////////////////////////
 
 // Animation for image and text
@@ -157,16 +158,17 @@ ion-icon {
 .icon-soundcloud {color: #ff7700}
 .icon-soundcloud:hover {background:#ff7700}
 
-// Adding in a really cool new feature
+// Text evolving feature
 #spin {
   color:red;
 }
+
 #spin:after {
   content:"";
   animation: spin 2.5s linear infinite;
 }
-@keyframes spin {
 
+@keyframes spin {
   0% { content: "HTML5"; }
   10% { content: "CSS"; }
   20% { content: "Java"; }
@@ -178,5 +180,4 @@ ion-icon {
   80% { content: "React"; }
   90% { content: "C"; }
   100% { content: "SQL"; }
-
 }
