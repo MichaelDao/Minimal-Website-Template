@@ -1,2 +1,2 @@
 # Michael's website
-Built with with Sass and Compass, have a look at my website at https://www.mdao.site/
+A quick, minimal personal website I built from scratch with Sass and Compass, feel free to fork it for yourself!
