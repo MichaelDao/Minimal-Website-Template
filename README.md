@@ -1,6 +1,10 @@
-# Just change the name, image, and links
-If you want to edit the stylesheet without SASS, edit style.css in the stylesheets folder, you can get started by editing the content in index.html for your own use!
+# Fork this project for yourself!
+Just change the name, image, and links.
 
-I bought my domain name from namecheap.com, and hosted the static site with GitHub pages.
+There are two files you need to worry about when you want to modify this page for your own use.
+- `stylesheets/style.css`
+- `index.html` 
 
-### Check out my version at www.mdao.site
+If you have a dns, you can host this static site with GitHub pages in the settings.
+
+### Check out my version at www.michaeldao.me

@@ -1,16 +1,9 @@
-/* line 5, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -20,50 +13,42 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.gem/ruby/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 9, ../sass/style.scss */
 body {
   color: #333;
   text-align: center;
@@ -71,53 +56,44 @@ body {
   background: #f7f7f7;
 }
 
-/* line 16, ../sass/style.scss */
 h1 {
   font-size: 2.25em;
   padding: 0 1em;
   font-style: italic;
 }
 
-/* line 22, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 26, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 31, ../sass/style.scss */
 ion-icon {
   font-size: 25px;
 }
 
-/* line 35, ../sass/style.scss */
 .gap {
   padding: 1em 0 0;
 }
 
-/* line 39, ../sass/style.scss */
 .padDown {
   padding: 0.5em 0em 0.5em;
 }
 
-/* line 44, ../sass/style.scss */
 .outer {
   padding: 20px;
   text-align: center;
   overflow-x: hidden;
 }
 
-/* line 50, ../sass/style.scss */
 .inner {
   display: inline-block;
   padding: 40px;
 }
 
-/* line 56, ../sass/style.scss */
 .avatar {
   -moz-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
   -webkit-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
@@ -129,7 +105,6 @@ ion-icon {
   height: 200px;
 }
 
-/* line 68, ../sass/style.scss */
 .loadanimation {
   animation: 1s ease-in-out both fadeInRight;
 }
@@ -144,42 +119,35 @@ ion-icon {
     -webkit-transform: translateX(0);
   }
 }
-/* line 84, ../sass/style.scss */
+
 .tile {
   animation: .4s ease-in-out both fade-in;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(1) {
   animation-delay: 1.35s;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(2) {
   animation-delay: 1.5s;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(3) {
   animation-delay: 1.65s;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(4) {
   animation-delay: 1.8s;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(5) {
   animation-delay: 1.95s;
 }
 
-/* line 91, ../sass/style.scss */
 .tile:nth-child(6) {
   animation-delay: 2.1s;
 }
 
-/* TODO At the moment, transforming will break the hover code*/
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -188,7 +156,7 @@ ion-icon {
     opacity: 1;
   }
 }
-/* line 109, ../sass/style.scss */
+
 .social li {
   position: relative;
   display: inline-block;
@@ -202,7 +170,7 @@ ion-icon {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 115, ../sass/style.scss */
+
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -210,16 +178,15 @@ ion-icon {
   transform: scale(1.25, 1.25);
   color: white;
 }
-/* line 121, ../sass/style.scss */
+
 .social li:before {
   position: absolute;
   width: 2em;
-  /* center align technique, give width, negative half margin */
   margin-left: -1em;
   top: 1.5em;
   left: 50%;
 }
-/* line 129, ../sass/style.scss */
+
 .social li a {
   display: block;
   color: inherit;
@@ -230,72 +197,58 @@ ion-icon {
   text-overflow: ellipsis;
 }
 
-/* line 143, ../sass/style.scss */
 .icon-resume {
   color: #e95950;
 }
 
-/* line 144, ../sass/style.scss */
 .icon-resume:hover {
   background: #e95950;
 }
 
-/* line 146, ../sass/style.scss */
 .icon-email {
   color: #004f9f;
 }
 
-/* line 147, ../sass/style.scss */
 .icon-email:hover {
   background: #004f9f;
 }
 
-/* line 149, ../sass/style.scss */
 .icon-github {
   color: #333;
 }
 
-/* line 150, ../sass/style.scss */
 .icon-github:hover {
   background: #333;
 }
 
-/* line 152, ../sass/style.scss */
 .icon-linkedin {
   color: #0077b5;
 }
 
-/* line 153, ../sass/style.scss */
 .icon-linkedin:hover {
   background: #0077b5;
 }
 
-/* line 155, ../sass/style.scss */
 .icon-instagram {
   color: #cd486b;
 }
 
-/* line 156, ../sass/style.scss */
 .icon-instagram:hover {
   background: #cd486b;
 }
 
-/* line 158, ../sass/style.scss */
 .icon-transcript {
   color: #ff7700;
 }
 
-/* line 159, ../sass/style.scss */
 .icon-transcript:hover {
   background: #ff7700;
 }
 
-/* line 162, ../sass/style.scss */
 #spin {
   color: red;
 }
 
-/* line 166, ../sass/style.scss */
 #spin:after {
   content: "";
   animation: spin 2.5s linear infinite;
@@ -303,10 +256,10 @@ ion-icon {
 
 @keyframes spin {
   0% {
-    content: "HTML5";
+    content: "Go";
   }
   10% {
-    content: "CSS";
+    content: "Terraform";
   }
   20% {
     content: "Java";
@@ -315,7 +268,7 @@ ion-icon {
     content: "Python";
   }
   40% {
-    content: "Node.Js";
+    content: "Node";
   }
   50% {
     content: "JavaScript";
@@ -333,6 +286,6 @@ ion-icon {
     content: "C";
   }
   100% {
-    content: "SQL";
+    content: "Bash";
   }
 }
